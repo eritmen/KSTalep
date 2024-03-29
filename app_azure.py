@@ -11,10 +11,10 @@ from azure.storage.blob import BlobServiceClient, ContainerClient, BlobClient
 # Azure Connection and Container
 # =============================================================================
 # connection string is under access keys
-connection_string = ""
+connection_string = "https://ksforecasting.blob.core.windows.net/kstalep?sp=rl&st=2024-03-29T10:53:48Z&se=2024-03-29T18:53:48Z&spr=https&sv=2022-11-02&sr=c&sig=EuKY3alTO0MdlyBb%2BBc5gGC8vvNiKhuflE9Dw0xuwlc%3D"
 blob_service_client = BlobServiceClient.from_connection_string(connection_string)
 
-container_name = ""
+container_name = "kstalep"
 container_client = blob_service_client.get_container_client(container_name)
 
 
